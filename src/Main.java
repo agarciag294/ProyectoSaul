@@ -1,15 +1,17 @@
-import javax.xml.stream.XMLStreamConstants;
-
-import com.thoughtworks.xstream.XStream;
+import Controladores.DepartamentoController;
+import Controladores.EmpleadoController;
+import vista.TextUI;
 
 public class Main {
     public static void main(String[] args) {
-        
-        System.out.println("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            
-            System.out.println("Alberto hijueputa");
-        }
+        EmpleadoController empleadoController = new EmpleadoController();
+        DepartamentoController departamentoController = new DepartamentoController();
+        
+        TextUI iu = new TextUI(departamentoController, empleadoController);
+        iu.iniciar();
+        
+        empleadoController.list();
+        
     }
 }

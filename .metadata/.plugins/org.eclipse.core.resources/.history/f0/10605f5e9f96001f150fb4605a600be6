@@ -1,0 +1,38 @@
+
+package vista;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.ArrayList;
+
+import com.thoughtworks.xstream.XStream;
+
+import Controladores.DepartamentoController;
+import Controladores.EmpleadoController;
+import modelo.Departamento;
+import modelo.Empleado;
+
+public class TextUI {
+
+    private DepartamentoController departamentoController;
+    private EmpleadoController empleadoController;
+
+    public TextUI() {
+    }
+
+    public TextUI(DepartamentoController departamentoController, EmpleadoController empleadoController) {
+        this.departamentoController = departamentoController;
+        this.empleadoController = empleadoController;
+    }
+
+    public void iniciar() {
+        cargarFicherosXML();
+        System.out.println("");
+    }
+
+    private void cargarFicherosXML() {
+        empleadoController.cargarFicheroEmpleados();
+        departamentoController.cargarFicheroDepartamentos();
+    }
+
+}

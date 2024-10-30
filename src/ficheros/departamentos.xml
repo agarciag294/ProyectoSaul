@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<listaDepartamentos>
+    <departamento>
+        <dep_no>1</dep_no>
+        <dnombre>Departamento La Élite</dnombre>
+        <loc>Cáceres</loc>
+    </departamento>
+    <departamento>
+        <dep_no>2</dep_no>
+        <dnombre>Hotel Cetral</dnombre>
+        <loc>Vigo</loc>
+    </departamento>
+    <departamento>
+        <dep_no>3</dep_no>
+        <dnombre>Hotel Plaza</dnombre>
+        <loc>Valencia</loc>
+    </departamento>
+    <departamento>
+        <dep_no>4</dep_no>
+        <dnombre>Las Palmeras</dnombre>
+        <loc>Cadiz</loc>
+    </departamento>
+    <departamento>
+        <dep_no>5</dep_no>
+        <dnombre>Continental</dnombre>
+        <loc>Sevilla</loc>
+    </departamento>
+</listaDepartamentos>
